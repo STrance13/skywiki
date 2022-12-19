@@ -1,0 +1,82 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>光翼查询</title>
+		<link rel="icon" href="img/wiki.png" />
+		<link href="css/index.css" rel="stylesheet" type="text/css" />
+	</head>
+	<style>
+		body{
+			background: url(img/search.jpg) no-repeat top;
+			background-size:cover;
+			background-attachment: fixed;
+		}
+		div.box{
+			position: absolute;
+			top: 20%;
+			right: 20%;
+			background: rgba(255,255,255,0.8);
+			margin: 20px;
+			padding: 20px;
+			border: #F8DF72 solid 2px;
+			border-radius: 30px;
+			box-shadow: 0px 0px 5px 3px #CCCCCC ;
+			text-align: center;
+			width: 300px;
+		}
+	</style>
+	<body>
+		<div id="menu">
+			<a href="index.html" title="回到主页">首页</a>
+			<a href="history.html" title="了解光遇的故事">历史故事</a>
+			<a href="search.html">光翼查询</a>
+			<a href="season.html">当前季节</a>
+			<a href="pastSeason.html">历史季节</a>
+		</div>
+		<div id="sky">Sky-光遇Wiki站</div>
+		<div class="box">
+			<div class="user">
+				<h2>欢迎使用Wiki站查询器<br/></h2>
+				<span>
+					用户ID：<input type="" type="text" required autofocus placeholder="请输入用户ID"/>
+				</span>
+				<span>
+					<input type="submit" value="查询" />
+				</span>
+			</div>
+			<div class="result">
+				<h3>祝早日成为满翼大佬！</h3>
+				<table>
+					<tr>
+						<h4>已获得的光翼（光翼数量每天0点刷新）：</h4>
+					</tr>
+					<tr>
+						<table>
+							<tr>
+								<td style="width: 100%;">普通光翼：</td>
+								<td>108/112</td>
+							</tr>
+						</table>
+					</tr>
+					<tr>
+						<progress max="112" value="108" title="108/112" style="width: 100%;"></progress>
+					</tr>
+					<tr>
+						<table>
+							<tr >
+								<td style="width: 100%;">永久光翼：</td>
+								<td>58/94</td>
+							</tr>
+						</table>
+					</tr>
+					<tr>
+						<progress max="94" value="58" title="58/94" style="width: 100%;"></progress>
+					</tr>
+					<tr>其中12个不在斗篷上</tr>
+				</table>
+			</div>
+		</div>
+		
+		
+		
+	</body>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Sky-光遇WIKI站</title>
+		<link rel="icon" href="img/wiki.png" />
+		<link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+		<style>
+			body{
+				background: url(img/index.png) no-repeat top;
+				background-size:cover;
+				background-attachment: fixed;
+			}
+			#menu{
+				width: 100%;
+				height:50px;
+				margin: 0px;
+				background: black;
+				opacity: 80%;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				float: left;
+			}
+			#menu a{
+				color: white;
+				text-decoration: none;
+				font-size: 28px;
+				font-family: "microsoft yahei";
+				display: block;
+				float: left;
+				text-align: center;
+				line-height: 35px;
+				margin-top: 5px;
+				margin-left: 20px;
+				background: black;
+				opacity: 80%;
+				
+			}
+			#menu a:hover{
+				text-decoration: none;
+				opacity: 100%;
+			}
+			#sky{
+				width: auto;
+				position: absolute;
+				top: 5px;
+				right: 10px;
+				text-align: right;
+				color: white;
+				font-size: 28px;
+				font-family: "microsoft yahei";
+			}
+			#box{
+				position: absolute;
+				top: 20%;
+				left: 20%;
+				height: auto;
+				width: auto;
+			}
+			#box a{
+				color: black;
+				display: block;
+				text-decoration: none;
+				line-height: 40px;
+				margin: 20px;
+			}
+			#box a:hover{
+				text-decoration: none;
+				animation-name: news;
+				animation-fill-mode: forwards;
+				animation-duration: 1s;
+			}
+			div.news1{
+				margin: 10px;
+				background: rgba(255,255,255,0.8);
+				border: #F8DF72 solid 2px;
+				border-radius: 30px;
+				opacity: 80%;
+				box-shadow: 0px 0px 5px 10px #CCCCCC ;
+				float: left;
+			}
+			div.news2{
+				margin: 10px;
+				float: left;
+				border-radius: 50px;
+				overflow: hidden;
+			}
+			div.news2 img:hover{
+				transition: 2s;
+				transform: scale(1.2);
+				box-shadow: 5px 5px 10px 2px #999;
+				cursor: pointer;
+			}
+			.news{
+				font-family: "microsoft yahei";
+				font-size: 40px;
+				width: 160px;
+				border-radius: 10%;
+				background: white;
+				opacity: 80%;
+				color: black;
+				box-shadow: 0px 0px 5px 10px #CCCCCC ;
+			}
+			.fa-music{
+				font-size: 20px;
+				color:  #545454;
+			}
+			div.music{
+				border: 3px solid #545454;
+				border-radius: 50%;
+				width: 33px;
+				height: 33px;
+				margin: 7px;
+				box-sizing: border-box;
+				position: relative;
+				animation-name: music;
+				animation-duration: 5s;
+				animation-timing-function: linear;
+				animation-iteration-count: infinite;
+				float: left;
+			}
+			.fa-music:hover{
+				color: #EEEEEE;
+				cursor: pointer;
+			}
+			div.music:hover{
+				--border: 3px solid #EEEEEE;
+				cursor: pointer;
+			}
+			div.iconMusic{
+				position: absolute;
+				top: 13%;
+				left: 13%;
+			}
+			@keyframes music{
+				from{}
+				to{transform: rotate(360deg);}
+			}
+			@keyframes news{
+				from{}
+				to{transform: translateX(20px);}
+			}
+		</style>
+		<script>
+			function onMusic(){	//背景音乐开关,默认开
+				if(document.querySelector('div.music').style.animationPlayState==''){//初始化开关,默认开所以点击后关闭
+					document.querySelector('div.music').style.animationPlayState = 'paused';
+					document.getElementById('audMusic').pause();
+				}
+				else if(document.querySelector('div.music').style.animationPlayState=='running'){//开的时候关闭
+					document.querySelector('div.music').style.animationPlayState = 'paused';
+					document.getElementById('audMusic').pause();
+				}
+				else{//关的时候打开
+					document.querySelector('div.music').style.animationPlayState = 'running';
+					document.getElementById('audMusic').play();
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<audio id="audMusic" autoplay="autoplay" src="media/index.mp3" loop="loop"></audio>
+		<div id="menu">
+			<div class="music" onclick="onMusic()" title="背景音乐">
+				<div class="iconMusic">
+					<i class="fa fa-music"></i>
+				</div>
+			</div>
+			<a href="index.html" title="回到主页">首页</a>
+			<a href="history.html" target="_blank" title="了解光遇的故事">历史故事</a>
+			<a href="search.html" target="_blank">光翼查询</a>
+			<a href="season.html" target="_blank">当前季节</a>
+			<a href="pastSeason.html" target="_blank">历史季节</a>
+		</div>
+		<div id="sky">Sky-光遇Wiki站</div>
+		<div id="box">
+			<div align="center">
+			<div class="news">新闻资讯</div></div>
+			<div class="news1">
+					<a href="#">《光遇》12月6日&nbsp;打击外挂公告及放诈骗</a>
+					<a href="#">以歌为笔&nbsp;吟唱故事&nbsp;|&nbsp;《光遇》欧若拉季&nbsp;玩家作品分享</a>
+					<a href="#">12月13日&nbsp;《光遇》维护通知</a>
+					<a href="#">以爱为歌，千音共鸣|《光遇》欧若拉季：音乐会&nbsp;唱响感动</a>
+					<a href="#">对话设计团队|《光遇》欧若拉季幕后访谈</a>
+					<a href="#">以爱为歌，千音共鸣|《光遇》欧若拉季：音乐会&nbsp;更新公告</a>
+			</div>
+			<div class="news2">
+				<img src="img/aurora.jpg" width="600px"/>
+			</div>
+		</div>
+	</body>
+</html>
