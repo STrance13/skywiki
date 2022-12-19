@@ -1,0 +1,58 @@
+#menu{
+	width: 100%;
+	height:50px;
+	margin: 0px;
+	background: black;
+	opacity: 80%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	float: left;
+}
+#menu a{
+	color: white;
+	text-decoration: none;
+	font-size: 28px;
+	font-family: "microsoft yahei";
+	display: block;
+	float: left;
+	text-align: center;
+	line-height: 35px;
+	margin-top: 5px;
+	margin-left: 20px;
+	background: black;
+	opacity: 80%;
+	
+}
+#menu a:hover{
+	text-decoration: none;
+	opacity: 100%;
+}
+#sky{
+	width: auto;
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	text-align: right;
+	color: white;
+	font-size: 28px;
+	font-family: "microsoft yahei";
+}
+.fa-music{
+	font-size: 20px;
+	color:  #545454;
+}
+div.music{
+	border: 3px solid #545454;
+	border-radius: 50%;
+	width: 33px;
+	height: 33px;
+	margin: 7px;
+	box-sizing: border-box;
+	position: relative;
+	animation-name: music;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	float: left;
+}
