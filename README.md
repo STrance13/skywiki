@@ -1,2 +1,2 @@
 # strance13.github.io/skywiki
-this is just a practice
+this is just homework.
